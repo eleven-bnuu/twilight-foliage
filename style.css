@@ -1,0 +1,135 @@
+.font-merienda {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-baby {
+  font-family: "Oooh Baby", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-bilbo {
+  font-family: "Bilbo Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.font-jakarta {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-abang {
+  color: #800000;
+}
+
+.text-krem {
+  color: #d5a776;
+}
+
+.text-ireng {
+  color: #201e1f;
+}
+
+.bg-ireng {
+  background-color: #201e1f;
+}
+
+.bg-abang {
+  background-color: #800000;
+}
+
+.bg-krem {
+  background-color: #d5a776;
+}
+
+#bg-blur {
+  transition: background-image 0.6s ease-in-out;
+}
+
+
+.border-krem {
+  border-color: #d5a776;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 15px;               /* agak naik biar ada jarak dari bawah */
+  left: 50%;                  /* mulai dari tengah */
+  transform: translateX(-50%);/* geser biar benar2 center */
+  width: 70%;
+  height: 50px;
+  background: #800000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.25);
+  border-radius: 9999px;       /* biar full rounded (pill shape) */
+  padding: 0 10px;             /* kasih padding kanan kiri */
+}
+
+.bottom-nav a {
+  flex: 1;
+  color: #d5a776;
+  text-align: center;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.bottom-nav a .icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto 2px;
+  display: block;
+}
+
+.bottom-nav a span {
+  display: block;
+}
+
+.bottom-nav a:hover {
+  color: #f0c986;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-btn {
+  position: fixed;       /* wajib biar lepas dari section */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #800000;
+  color: #d5a776;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  z-index: 99999;        /* jauh lebih tinggi dari z-40 Hero */
+  cursor: pointer;
+}
+
+
+
+#btn-music {
+  position: fixed;
+  bottom: 130px;   /* lebih tinggi dari scroll */
+  right: 20px;
+  z-index: 9999;
+}
+
+#btn-scroll {
+  position: fixed;
+  bottom: 80px;   /* paling bawah */
+  right: 20px;
+  z-index: 9999;
+}

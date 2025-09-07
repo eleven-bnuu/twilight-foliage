@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+      <meta charset="utf-8"/>
+      <meta content="width=device-width, initial-scale=1" name="viewport"/>
+      <title>
+       Twilight foliage
+      </title>
+      <script src="https://cdn.tailwindcss.com">
+      </script>
+      <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Merienda:wght@300..900&family=Oooh+Baby&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+ </head>
+   <body class="relative min-h-screen flex flex-col justify-between items-center text-center bg-ireng overflow-hidden">
+  <!-- Background -->
+  <img src="./img/bgidx.jpg" alt="Background"
+       class="absolute inset-0 w-full h-full object-cover" />
+
+  <!-- Atas -->
+  <div class="relative z-10 pt-3">
+    <p class="font-jakarta text-krem text-sm">Wedding Invitation</p>
+    <h3 class="font-bilbo text-krem text-7xl mt-8">Bro &amp; Sis</h3>
+  </div>
+
+  <!-- Bawah -->
+  <div class="relative z-10 mb-[70px] flex flex-col items-center">
+    <p class="text-krem text-base mb-2 font-jakarta">
+      Kepada Yth. Bapak/Ibu/Saudara/i
+    </p>
+<h3 id="penerima" class="text-3xl font-merienda text-krem mb-3"></h3>
+
+    <a href="home.html" id="enterBtn">
+  <button class="px-4 py-2 border-2 border-[#d5a776] text-krem rounded-full bg-transparent">
+    Buka Undangan
+  </button>
+</a>
+
+  </div>
+  <!-- script musik autoscroll -->
+  <script>
+    document.getElementById("enterBtn").addEventListener("click", () => {
+      localStorage.setItem("autoplay", "true"); // kasih trigger
+      window.location.href = "home.html";
+    });
+  </script>
+  <!-- script param -->
+  <script>
+      // Ambil parameter dari URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get('to'); // baca nilai ?to=
+  
+      // Kalau ada nama → tampilkan di <h3>
+      if (nama) {
+        document.getElementById("penerima").innerText = nama;
+      }
+    </script>
+</body>
+</html>
+      
